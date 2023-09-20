@@ -1,0 +1,17 @@
+<table class="table table-borderd">
+    <tr class="bg-primary">
+        <th>ID</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Salary</th>
+        <th>DOB</th>
+    </tr>
+
+    <tr *ngFor="let user of value">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.salary}}</td>
+        <td>{{user.dob}}</td>
+    </tr>
+</table>

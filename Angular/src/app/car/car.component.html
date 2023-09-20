@@ -1,0 +1,27 @@
+
+<p>car works!</p>
+
+
+<div class="center">
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0" *ngFor="let car of carinfo">
+            <div class="col-md-4">
+                <img src="{{car.img}}" class="img-fluid rounded-start" alt="...">
+            </div>
+      <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">{{car.Nameofcar}}</h5>
+            <div>
+                <h5> Car Details</h5>
+                <p class="card-text">{{car.Information}}</p>
+            </div>
+            <div>
+                <h5>Car Price</h5>
+                <h4 class="card-text"><small class="text-body-secondary">{{car.price}}</small></h4>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
